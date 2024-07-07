@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Definições das variáveis
-KEYCLOAK_URL="http://localhost:6000"
+KEYCLOAK_URL="http://localhost:6003"
 ADMIN_USER="administrator"
 ADMIN_PASSWORD="administrator"
 JSON_FILE_PATH="$1"

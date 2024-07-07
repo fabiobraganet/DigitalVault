@@ -28,7 +28,7 @@ echo "Subindo os contêineres do Docker..."
 docker-compose -f $DOCKER_COMPOSE_FILE up -d
 
 configure_realm() {
-  until $(curl --output /dev/null --silent --head --fail http://localhost:6000); do
+  until $(curl --output /dev/null --silent --head --fail http://localhost:6003); do
     echo "Esperando pelo Keycloak..."
     sleep 5
   done
