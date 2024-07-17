@@ -1,0 +1,20 @@
+[package]
+name = "digitalvault_minio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = { workspace = true }
+async-trait = { workspace = true }
+dotenv = "0.15.0"
+env_logger = { workspace = true }
+rusoto_core = "0.48.0"
+rusoto_credential = "0.48.0"
+rusoto_s3 = "0.48.0"
+rusoto_iam = "0.48.0"
+tokio = { workspace = true }
+tokio-test = { workspace = true }
+
+[[test]]
+name = "minio_tests"
+path = "tests/minio/mod.rs"
