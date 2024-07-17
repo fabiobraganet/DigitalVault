@@ -30,7 +30,7 @@ services:
       DB_USER: administrator
       DB_PASSWORD: administrator
     ports:
-      - '6000:8080'
+      - '6003:8080'
       - '6011:9000'
     depends_on:
       - postgres
